@@ -8,18 +8,19 @@
 import Foundation
 import Combine
 
-class HomeViewModel: ObservableObject {
+class HomeViewModel<S: Scheduler>: ObservableObject {
 
     private var cancellable: Set<AnyCancellable> = []
+    private let scheduler: S
     private let homeUseCase: HomeUseCase
 
     @Published var restaurants: [RestaurantModel] = []
     @Published var keyword: String = ""
     @Published var isLoading: Bool = true
 
-    init(homeUseCase: HomeUseCase) {
+    init(homeUseCase: HomeUseCase, scheduler: S) {
         self.homeUseCase = homeUseCase
-
+        self.scheduler = scheduler
         self.setupObservable()
     }
 
@@ -34,7 +35,7 @@ class HomeViewModel: ObservableObject {
     private func searchRestaurant(query: String) {
         self.isLoading = true
         self.homeUseCase.searchRestaurants(query: query)
-            .receive(on: RunLoop.main)
+            .receive(on: self.scheduler)
             .sink(receiveCompletion: { _ in
                 self.isLoading = false
             }, receiveValue: { restaurants in
@@ -46,7 +47,7 @@ class HomeViewModel: ObservableObject {
     func getRestaurants() {
         self.isLoading = true
         self.homeUseCase.getRestaurants()
-            .receive(on: RunLoop.main)
+            .receive(on: self.scheduler)
             .sink(receiveCompletion: { _ in
                 self.isLoading = false
             }, receiveValue: { restaurants in

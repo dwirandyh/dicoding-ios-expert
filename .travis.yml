@@ -1,0 +1,8 @@
+language: swift
+cache:
+  bundler: true
+  cocoapods: true
+osx_image: xcode12.2
+xcode_workspace:  restaurant-app.xcworkspace
+xcode_scheme: restaurant-app
+xcode_destination: platform=iOS Simulator,OS=14.2,name=iPhone 11 Pro

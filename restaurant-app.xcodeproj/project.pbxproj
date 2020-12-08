@@ -15,6 +15,7 @@
 		8D15427025763F8800AE1D23 /* RestaurantListResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D15426F25763F8800AE1D23 /* RestaurantListResultResponse.swift */; };
 		8D15427F25763FCC00AE1D23 /* RestaurantListDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D15427E25763FCC00AE1D23 /* RestaurantListDetailResponse.swift */; };
 		8D26B79C257B910D00754E56 /* LoadingWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D26B79B257B910D00754E56 /* LoadingWidget.swift */; };
+		8D57601D257F631000A48FA0 /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D57601C257F631000A48FA0 /* HomeViewModelTest.swift */; };
 		8D728E992578CF1300E9115A /* DataFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D728E982578CF1300E9115A /* DataFaker.swift */; };
 		8D728EB12578D32B00E9115A /* ImageNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D728EB02578D32B00E9115A /* ImageNetwork.swift */; };
 		8D728EB72578D34700E9115A /* ImageNetworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D728EB62578D34700E9115A /* ImageNetworkViewModel.swift */; };
@@ -85,6 +86,7 @@
 		8D15426F25763F8800AE1D23 /* RestaurantListResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListResultResponse.swift; sourceTree = "<group>"; };
 		8D15427E25763FCC00AE1D23 /* RestaurantListDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListDetailResponse.swift; sourceTree = "<group>"; };
 		8D26B79B257B910D00754E56 /* LoadingWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingWidget.swift; sourceTree = "<group>"; };
+		8D57601C257F631000A48FA0 /* HomeViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
 		8D728E982578CF1300E9115A /* DataFaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFaker.swift; sourceTree = "<group>"; };
 		8D728EB02578D32B00E9115A /* ImageNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetwork.swift; sourceTree = "<group>"; };
 		8D728EB62578D34700E9115A /* ImageNetworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetworkViewModel.swift; sourceTree = "<group>"; };
@@ -306,6 +308,30 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		8D576019257F631000A48FA0 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				8D57601A257F631000A48FA0 /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		8D57601A257F631000A48FA0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8D57601B257F631000A48FA0 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8D57601B257F631000A48FA0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8D57601C257F631000A48FA0 /* HomeViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		8D728EB52578D33000E9115A /* ImageNetwork */ = {
 			isa = PBXGroup;
 			children = (
@@ -425,6 +451,7 @@
 		8DDCB68C25762A7E00B46D45 /* restaurant-appTests */ = {
 			isa = PBXGroup;
 			children = (
+				8D576019257F631000A48FA0 /* Feature */,
 				8DDCB68D25762A7E00B46D45 /* RestaurantAppTest.swift */,
 				8DDCB68F25762A7E00B46D45 /* Info.plist */,
 			);
@@ -928,6 +955,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DDCB68E25762A7E00B46D45 /* RestaurantAppTest.swift in Sources */,
+				8D57601D257F631000A48FA0 /* HomeViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
