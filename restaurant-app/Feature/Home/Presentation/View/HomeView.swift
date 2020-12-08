@@ -6,13 +6,14 @@
 //
 
 import SwiftUI
+import Combine
 import Resolver
 
 struct HomeView: View {
 
-    @ObservedObject var homeViewModel: HomeViewModel
+    @ObservedObject var homeViewModel: HomeViewModel<RunLoop>
 
-    init(viewModel: HomeViewModel) {
+    init(viewModel: HomeViewModel<RunLoop>) {
         self.homeViewModel = viewModel
     }
 
