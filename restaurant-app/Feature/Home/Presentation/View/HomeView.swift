@@ -9,6 +9,7 @@ import SwiftUI
 import Combine
 import Resolver
 import Common
+import Routing
 
 struct HomeView: View {
 
@@ -61,7 +62,7 @@ struct HomeView: View {
                     ScrollView(.vertical, showsIndicators: false) {
                         ForEach(self.homeViewModel.restaurants, id: \.id) { restaurant in
                             NavigationLink(
-                                destination: DetailView(viewModel: Resolver.resolve(), restaurantId: restaurant.id
+                                destination: Routing.shared.navigateToDetail(restaurantId: restaurant.id
                                 )) {
                                 RestaurantListWidget(restaurantModel: restaurant)
                                     .padding(EdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8))

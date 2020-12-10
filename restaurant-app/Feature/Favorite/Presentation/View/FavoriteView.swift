@@ -8,6 +8,7 @@
 import SwiftUI
 import Resolver
 import Common
+import Routing
 
 struct FavoriteView: View {
 
@@ -47,8 +48,7 @@ struct FavoriteView: View {
                     ScrollView(.vertical, showsIndicators: false) {
                         ForEach(self.favoriteViewModel.restaurants, id: \.id) { restaurant in
                             NavigationLink(
-                                destination: DetailView(viewModel: Resolver.resolve(), restaurantId: restaurant.id
-                                )) {
+                                destination: Routing.shared.navigateToDetail(restaurantId: restaurant.id)) {
                                 RestaurantListWidget(restaurantModel: restaurant)
                                     .padding(EdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8))
                             }

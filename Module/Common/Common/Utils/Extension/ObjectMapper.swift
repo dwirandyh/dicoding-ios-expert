@@ -62,7 +62,21 @@ extension RestaurantDetailResult {
                                      rating: self.rating ?? 0,
                                      reviews: reviewModel,
                                      isFavorite: false
-                                     )
+        )
+    }
+}
+
+extension RestaurantDetailModel {
+    func mapToEntity() -> RestaurantEntity {
+        let restaurantEntity: RestaurantEntity = RestaurantEntity()
+        restaurantEntity.id = self.id
+        restaurantEntity.name = self.name
+        restaurantEntity.overview = self.description
+        restaurantEntity.city = self.city
+        restaurantEntity.smallPictureUrl = self.smallPicture
+        restaurantEntity.mediumPictureUrl = self.mediumPicture
+        restaurantEntity.rating = self.rating
+        return restaurantEntity
     }
 }
 

@@ -9,6 +9,7 @@ import Foundation
 import RealmSwift
 import Resolver
 import Common
+import Detail
 
 extension Resolver: ResolverRegistering {
     public static func registerAllServices() {

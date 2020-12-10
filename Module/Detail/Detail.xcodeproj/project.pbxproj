@@ -7,10 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D05CF2E258216020066814D /* DetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D05CF142582154E0066814D /* DetailUseCase.swift */; };
+		8D05CF31258216070066814D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D05CF192582155A0066814D /* DetailViewModel.swift */; };
+		8D05CF342582160A0066814D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D05CF1B2582155A0066814D /* DetailView.swift */; };
 		8D711EF72581FA830019C332 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D711EF62581FA830019C332 /* Test.swift */; };
 		8D711F47258200F10019C332 /* DetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D711F46258200F10019C332 /* DetailTests.swift */; };
 		8D711F49258200F10019C332 /* Detail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DEA753A2581E3A300E77828 /* Detail.framework */; };
+		8DD704D92582642E0081A0E0 /* RoutingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD704D82582642E0081A0E0 /* RoutingExtension.swift */; };
+		8DD704DD2582643D0081A0E0 /* Routing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD704DC2582643D0081A0E0 /* Routing.framework */; };
+		8DD704DE2582643D0081A0E0 /* Routing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD704DC2582643D0081A0E0 /* Routing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8DD7052825826CE00081A0E0 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD7052725826CE00081A0E0 /* Common.framework */; };
+		8DD7052925826CE00081A0E0 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD7052725826CE00081A0E0 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8DEA753F2581E3A300E77828 /* Detail.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DEA753D2581E3A300E77828 /* Detail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DFEBA03258261F700245E8A /* DetailDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFEBA02258261F700245E8A /* DetailDI.swift */; };
 		A8A2658073EC7FF23B5BB3C0 /* Pods_restaurant_app_Detail_DetailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5403A5C8B544C2B4C584DF73 /* Pods_restaurant_app_Detail_DetailTests.framework */; };
 		F41DAFA53529173FA6EFDDD6 /* Pods_restaurant_app_Detail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8376AC85E859D1729027C23 /* Pods_restaurant_app_Detail.framework */; };
 /* End PBXBuildFile section */
@@ -25,18 +34,40 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD704DF2582643D0081A0E0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8DD704DE2582643D0081A0E0 /* Routing.framework in Embed Frameworks */,
+				8DD7052925826CE00081A0E0 /* Common.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5403A5C8B544C2B4C584DF73 /* Pods_restaurant_app_Detail_DetailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_restaurant_app_Detail_DetailTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F268F311F670AAB75D1218 /* Pods-restaurant-app-Detail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app-Detail.debug.xcconfig"; path = "Target Support Files/Pods-restaurant-app-Detail/Pods-restaurant-app-Detail.debug.xcconfig"; sourceTree = "<group>"; };
 		582E106C300C96515428A626 /* Pods-restaurant-app-Detail-DetailTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app-Detail-DetailTests.debug.xcconfig"; path = "Target Support Files/Pods-restaurant-app-Detail-DetailTests/Pods-restaurant-app-Detail-DetailTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D05CF142582154E0066814D /* DetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUseCase.swift; sourceTree = "<group>"; };
+		8D05CF192582155A0066814D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		8D05CF1B2582155A0066814D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		8D711EF62581FA830019C332 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		8D711F042581FB1C0019C332 /* Pods_restaurant_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_restaurant_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D711F44258200F10019C332 /* DetailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D711F46258200F10019C332 /* DetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTests.swift; sourceTree = "<group>"; };
 		8D711F48258200F10019C332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DD704D82582642E0081A0E0 /* RoutingExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingExtension.swift; sourceTree = "<group>"; };
+		8DD704DC2582643D0081A0E0 /* Routing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Routing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DD7052725826CE00081A0E0 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEA753A2581E3A300E77828 /* Detail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Detail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEA753D2581E3A300E77828 /* Detail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Detail.h; sourceTree = "<group>"; };
 		8DEA753E2581E3A300E77828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DFEBA02258261F700245E8A /* DetailDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDI.swift; sourceTree = "<group>"; };
 		93186D6AE2607C90CE3E148C /* Pods-restaurant-app-Detail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app-Detail.release.xcconfig"; path = "Target Support Files/Pods-restaurant-app-Detail/Pods-restaurant-app-Detail.release.xcconfig"; sourceTree = "<group>"; };
 		A5178201A996DA76E9B584F4 /* Pods-restaurant-app-Detail-DetailTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app-Detail-DetailTests.release.xcconfig"; path = "Target Support Files/Pods-restaurant-app-Detail-DetailTests/Pods-restaurant-app-Detail-DetailTests.release.xcconfig"; sourceTree = "<group>"; };
 		E8376AC85E859D1729027C23 /* Pods_restaurant_app_Detail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_restaurant_app_Detail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +87,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DD7052825826CE00081A0E0 /* Common.framework in Frameworks */,
 				F41DAFA53529173FA6EFDDD6 /* Pods_restaurant_app_Detail.framework in Frameworks */,
+				8DD704DD2582643D0081A0E0 /* Routing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,11 +99,54 @@
 		6143C955408020ED9C470D1E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8DD7052725826CE00081A0E0 /* Common.framework */,
+				8DD704DC2582643D0081A0E0 /* Routing.framework */,
 				8D711F042581FB1C0019C332 /* Pods_restaurant_app.framework */,
 				E8376AC85E859D1729027C23 /* Pods_restaurant_app_Detail.framework */,
 				5403A5C8B544C2B4C584DF73 /* Pods_restaurant_app_Detail_DetailTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D05CF152582154E0066814D /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				8D05CF142582154E0066814D /* DetailUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		8D05CF162582154E0066814D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				8D05CF152582154E0066814D /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		8D05CF1A2582155A0066814D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8D05CF192582155A0066814D /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8D05CF1C2582155A0066814D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D05CF1B2582155A0066814D /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D05CF1D2582155A0066814D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				8D05CF1A2582155A0066814D /* ViewModel */,
+				8D05CF1C2582155A0066814D /* View */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		8D711F45258200F10019C332 /* DetailTests */ = {
@@ -80,6 +156,14 @@
 				8D711F48258200F10019C332 /* Info.plist */,
 			);
 			path = DetailTests;
+			sourceTree = "<group>";
+		};
+		8DD704D7258264200081A0E0 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				8DD704D82582642E0081A0E0 /* RoutingExtension.swift */,
+			);
+			path = External;
 			sourceTree = "<group>";
 		};
 		8DEA75302581E3A300E77828 = {
@@ -105,11 +189,23 @@
 		8DEA753C2581E3A300E77828 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				8DD704D7258264200081A0E0 /* External */,
+				8DFEBA01258261EE00245E8A /* DI */,
+				8D05CF162582154E0066814D /* Domain */,
+				8D05CF1D2582155A0066814D /* Presentation */,
 				8DEA753D2581E3A300E77828 /* Detail.h */,
 				8DEA753E2581E3A300E77828 /* Info.plist */,
 				8D711EF62581FA830019C332 /* Test.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		8DFEBA01258261EE00245E8A /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				8DFEBA02258261F700245E8A /* DetailDI.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 		EFD8B5665CD79D38650C2074 /* Pods */ = {
@@ -167,6 +263,7 @@
 				8DEA75362581E3A300E77828 /* Sources */,
 				8DEA75372581E3A300E77828 /* Frameworks */,
 				8DEA75382581E3A300E77828 /* Resources */,
+				8DD704DF2582643D0081A0E0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,7 +405,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DD704D92582642E0081A0E0 /* RoutingExtension.swift in Sources */,
 				8D711EF72581FA830019C332 /* Test.swift in Sources */,
+				8D05CF2E258216020066814D /* DetailUseCase.swift in Sources */,
+				8D05CF342582160A0066814D /* DetailView.swift in Sources */,
+				8DFEBA03258261F700245E8A /* DetailDI.swift in Sources */,
+				8D05CF31258216070066814D /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

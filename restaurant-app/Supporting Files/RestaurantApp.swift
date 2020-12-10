@@ -7,9 +7,15 @@
 
 import SwiftUI
 import Resolver
+import Routing
 
 @main
 struct RestaurantApp: App {
+
+    init() {
+        Routing.shared.registerAllRouter()
+    }
+
     var body: some Scene {
         WindowGroup {
             TabView {

@@ -12,7 +12,7 @@ public protocol RestaurantRepository {
     func getRestaurants() -> AnyPublisher<[RestaurantModel], Error>
     func searchRestaurant(query: String) -> AnyPublisher<[RestaurantModel], Error>
     func getRestaurantDetail(restaurantId: String) -> AnyPublisher<RestaurantDetailModel, Error>
-//    func addFavorite(restaurant: RestaurantEntity) -> AnyPublisher<Bool, Error>
+    func addFavorite(restaurant: RestaurantDetailModel) -> AnyPublisher<Bool, Error>
     func getFavorite() -> AnyPublisher<[RestaurantModel], Error>
 }
 
@@ -39,20 +39,22 @@ public class RestaurantRepositoryImpl: RestaurantRepository {
     }
 
     public func getRestaurantDetail(restaurantId: String) -> AnyPublisher<RestaurantDetailModel, Error> {
-        return Publishers.Zip(self.remoteDataSource.getRestaurantDetail(restaurantId: restaurantId),
-                              self.localeDataSource.isFavorite(restaurantId: restaurantId))
-            .flatMap { (restaurantDetailResult, isFavorite) -> AnyPublisher<RestaurantDetailModel, Error> in
-                return Future<RestaurantDetailModel, Error> { completion in
-                    var restaurantDetail = restaurantDetailResult.mapToModel()
-                    restaurantDetail.isFavorite = isFavorite
-                    completion(.success(restaurantDetail))
-                }.eraseToAnyPublisher()
+        return Publishers.Zip(
+            self.remoteDataSource.getRestaurantDetail(restaurantId: restaurantId),
+            self.localeDataSource.isFavorite(restaurantId: restaurantId)
+        )
+        .flatMap { (restaurantDetailResult, isFavorite) -> AnyPublisher<RestaurantDetailModel, Error> in
+            return Future<RestaurantDetailModel, Error> { completion in
+                var restaurantDetail = restaurantDetailResult.mapToModel()
+                restaurantDetail.isFavorite = isFavorite
+                completion(.success(restaurantDetail))
             }.eraseToAnyPublisher()
+        }.eraseToAnyPublisher()
     }
 
-//    func addFavorite(restaurant: RestaurantEntity) -> AnyPublisher<Bool, Error> {
-//        return self.localeDataSource.addFavorite(restaurant: restaurant)
-//    }
+    public func addFavorite(restaurant: RestaurantDetailModel) -> AnyPublisher<Bool, Error> {
+        return self.localeDataSource.addFavorite(restaurant: restaurant.mapToEntity())
+    }
 
     public func getFavorite() -> AnyPublisher<[RestaurantModel], Error> {
         return self.localeDataSource.getFavorite()

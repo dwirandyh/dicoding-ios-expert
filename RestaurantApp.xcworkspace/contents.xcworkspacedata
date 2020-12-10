@@ -8,6 +8,9 @@
       location = "group:Module/Common/Common.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Module/Routing/Routing.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:restaurant-app.xcodeproj">
    </FileRef>
    <FileRef

@@ -35,4 +35,9 @@ target 'restaurant-app' do
     end
   end 
 
+  target 'Routing' do
+    project './Module/Routing/Routing'
+    target 'RoutingTests' 
+  end
+
 end

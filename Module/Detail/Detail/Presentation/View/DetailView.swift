@@ -9,7 +9,7 @@ import SwiftUI
 import Common
 import Resolver
 
-struct DetailView: View {
+public struct DetailView: View {
 
     @Environment(\.presentationMode) var presentationMode
 
@@ -17,7 +17,7 @@ struct DetailView: View {
 
     var restaurantId: String
 
-    init(viewModel: DetailViewModel, restaurantId: String) {
+    public init(viewModel: DetailViewModel, restaurantId: String) {
         self.detailViewModel = viewModel
         self.restaurantId = restaurantId
     }
@@ -36,7 +36,7 @@ struct DetailView: View {
         return isFavorite
     }
 
-    var body: some View {
+    public var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
                 ZStack(alignment: .topLeading) {

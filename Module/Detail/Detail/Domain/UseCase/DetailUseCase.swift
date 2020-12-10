@@ -11,7 +11,7 @@ import Common
 
 protocol DetailUseCase {
     func getRestaurantDetail(restaurantId: String) -> AnyPublisher<RestaurantDetailModel, Error>
-//    func addFavorite(restaurant: RestaurantEntity) -> AnyPublisher<Bool, Error>
+    func addFavorite(restaurant: RestaurantDetailModel) -> AnyPublisher<Bool, Error>
 }
 
 class DetailUseCaseImpl: DetailUseCase {
@@ -26,7 +26,7 @@ class DetailUseCaseImpl: DetailUseCase {
         return self.repository.getRestaurantDetail(restaurantId: restaurantId)
     }
 
-//    func addFavorite(restaurant: RestaurantEntity) -> AnyPublisher<Bool, Error> {
-//        return self.repository.addFavorite(restaurant: restaurant)
-//    }
+    func addFavorite(restaurant: RestaurantDetailModel) -> AnyPublisher<Bool, Error> {
+        return self.repository.addFavorite(restaurant: restaurant)
+    }
 }

@@ -1,15 +1,15 @@
 //
-//  DI.swift
-//  restaurant-app
+//  DetailDI.swift
+//  Detail
 //
-//  Created by Dwi Randy Herdinanto on 04/12/20.
+//  Created by Dwi Randy Herdinanto on 10/12/20.
 //
 
 import Foundation
 import Resolver
 
 extension Resolver {
-    static func registerDetailService() {
+    public static func registerDetailService() {
         register {
             DetailViewModel(detailUseCase: resolve())
         }

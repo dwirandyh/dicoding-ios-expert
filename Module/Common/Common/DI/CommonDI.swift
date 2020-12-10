@@ -15,6 +15,12 @@ extension Resolver {
             RemoteDataSourceImpl() as RemoteDataSource
         }
 
+        do {
+            try Realm()
+        } catch let error {
+            print(error)
+        }
+
         register {
             LocaleDataSourceImpl(realm: try? Realm()) as LocaleDataSource
         }
