@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import Common
 
 class DetailViewModel: ObservableObject {
 
@@ -36,28 +37,28 @@ class DetailViewModel: ObservableObject {
     }
 
     func addFavorite() {
-        guard let restaurant = self.restaurantDetail else { return }
-        let restaurantEntity: RestaurantEntity = RestaurantEntity()
-        restaurantEntity.id = restaurant.id
-        restaurantEntity.name = restaurant.name
-        restaurantEntity.overview = restaurant.description
-        restaurantEntity.city = restaurant.city
-        restaurantEntity.smallPictureUrl = restaurant.smallPicture
-        restaurantEntity.mediumPictureUrl = restaurant.mediumPicture
-        restaurantEntity.rating = restaurant.rating
-
-        self.detailUseCase.addFavorite(restaurant: restaurantEntity)
-            .receive(on: RunLoop.main)
-            .sink(receiveCompletion: { completion in
-                switch completion {
-                case .failure:
-                    break
-                case .finished:
-                    break
-                }
-            }, receiveValue: { isSuccess in
-                self.restaurantDetail?.isFavorite = isSuccess
-            })
-            .store(in: &self.cancellable)
+//        guard let restaurant = self.restaurantDetail else { return }
+//        let restaurantEntity: RestaurantEntity = RestaurantEntity()
+//        restaurantEntity.id = restaurant.id
+//        restaurantEntity.name = restaurant.name
+//        restaurantEntity.overview = restaurant.description
+//        restaurantEntity.city = restaurant.city
+//        restaurantEntity.smallPictureUrl = restaurant.smallPicture
+//        restaurantEntity.mediumPictureUrl = restaurant.mediumPicture
+//        restaurantEntity.rating = restaurant.rating
+//
+//        self.detailUseCase.addFavorite(restaurant: restaurantEntity)
+//            .receive(on: RunLoop.main)
+//            .sink(receiveCompletion: { completion in
+//                switch completion {
+//                case .failure:
+//                    break
+//                case .finished:
+//                    break
+//                }
+//            }, receiveValue: { isSuccess in
+//                self.restaurantDetail?.isFavorite = isSuccess
+//            })
+//            .store(in: &self.cancellable)
     }
 }

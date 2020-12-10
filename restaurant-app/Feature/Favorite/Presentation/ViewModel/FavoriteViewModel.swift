@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import Common
 
 class FavoriteViewModel: ObservableObject {
 

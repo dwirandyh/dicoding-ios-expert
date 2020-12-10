@@ -5,6 +5,8 @@ target 'restaurant-app' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+  workspace "RestaurantApp"
+
   # Pods for restaurant-app
   pod "Resolver"
   pod "Alamofire"
@@ -18,5 +20,19 @@ target 'restaurant-app' do
   target 'restaurant-appUITests' do
     # Pods for testing
   end
+
+  target 'Detail' do
+    project './Module/Detail/Detail'
+    
+    target 'DetailTests' do
+    end
+  end
+
+  target 'Common' do
+    project './Module/Common/Common'
+
+    target 'CommonTests' do 
+    end
+  end 
 
 end

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Resolver
+import Common
 
 struct FavoriteView: View {
 

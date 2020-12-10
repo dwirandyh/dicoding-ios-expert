@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import Common
 
 protocol FavoriteUseCase {
     func getFavorite() -> AnyPublisher<[RestaurantModel], Error>

@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import Common
 
 protocol HomeUseCase {
     func getRestaurants() -> AnyPublisher<[RestaurantModel], Error>

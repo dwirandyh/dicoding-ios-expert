@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Common
 import Resolver
 
 struct DetailView: View {
@@ -129,7 +130,7 @@ struct DetailView: View {
                                 .titleSectionStyle()
 
                             HStack(spacing: 16) {
-                                RatingWidget()
+                                RatingWidget(rating: self.detailViewModel.restaurantDetail?.rating ?? 0)
                             }
 
                             Spacer()
