@@ -8,7 +8,7 @@
 import Foundation
 import Resolver
 
-extension Resolver {
+public extension Resolver {
     static func registerFavoriteService() {
         register {
             FavoriteViewModel(favoriteUseCase: resolve())

@@ -9,7 +9,7 @@ import Foundation
 import Combine
 import Common
 
-public class DetailViewModel: ObservableObject {
+class DetailViewModel: ObservableObject {
 
     private var cancellable: Set<AnyCancellable> = []
     private let detailUseCase: DetailUseCase

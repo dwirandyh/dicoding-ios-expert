@@ -13,5 +13,6 @@ import Routing
 public extension Routing {
     func registerAllRouter() {
         self.registerDetailRouting()
+        self.registerFavoriteRouting()
     }
 }

@@ -28,6 +28,13 @@ target 'restaurant-app' do
     end
   end
 
+  target 'Favorite' do
+    project './Module/Favorite/Favorite'
+
+    target 'FavoriteTests' do
+    end
+  end
+
   target 'Common' do
     project './Module/Common/Common'
 

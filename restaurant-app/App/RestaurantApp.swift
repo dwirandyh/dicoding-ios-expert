@@ -8,6 +8,7 @@
 import SwiftUI
 import Resolver
 import Routing
+import Favorite
 
 @main
 struct RestaurantApp: App {
@@ -24,13 +25,11 @@ struct RestaurantApp: App {
                         Image.icHouse
                         Text("Home")
                     }
-
-                FavoriteView(viewModel: Resolver.resolve())
+                Routing.shared.navigateToFavorite()
                     .tabItem {
                         Image.icFavoriteFill
                         Text("Favorite")
                     }
-
                 AboutView()
                     .tabItem {
                         Image.icAbout

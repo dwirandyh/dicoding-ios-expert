@@ -9,7 +9,7 @@ import SwiftUI
 import Common
 import Resolver
 
-public struct DetailView: View {
+struct DetailView: View {
 
     @Environment(\.presentationMode) var presentationMode
 

@@ -17,6 +17,12 @@ public class Routing {
     public func navigateToDetail(restaurantId: String) -> AnyView? {
         return routeToDetail?(restaurantId)
     }
+
+    public var routeToFavorite: (() -> AnyView)?
+
+    public func navigateToFavorite() -> AnyView? {
+        return routeToFavorite?()
+    }
 }
 
 //public struct Routing<Content, T> : View where Content : View, T : View {

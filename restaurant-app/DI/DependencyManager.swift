@@ -10,6 +10,7 @@ import RealmSwift
 import Resolver
 import Common
 import Detail
+import Favorite
 
 extension Resolver: ResolverRegistering {
     public static func registerAllServices() {
