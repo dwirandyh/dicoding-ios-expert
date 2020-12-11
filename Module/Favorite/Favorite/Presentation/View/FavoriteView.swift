@@ -29,6 +29,7 @@ struct FavoriteView: View {
                     Text("Your Favorite")
                         .font(.system(size: 24, weight: .bold))
                         .foregroundColor(.black100)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                 }
 
                 Spacer()

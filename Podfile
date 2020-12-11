@@ -1,3 +1,5 @@
+source "https://github.com/dwirandyh/dicoding-ios-module-spec"
+
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
@@ -11,6 +13,7 @@ target 'restaurant-app' do
   pod "Resolver"
   pod "Alamofire"
   pod "RealmSwift"
+  pod "About"
 
   target 'restaurant-appTests' do
     inherit! :search_paths
@@ -39,13 +42,6 @@ target 'restaurant-app' do
     project './Module/Home/Home'
 
     target 'HomeTests' do
-    end
-  end
-
-  target 'About' do
-    project './Module/About/About'
-
-    target 'AboutTests' do
     end
   end
 

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Module/Common/Common.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Module/Detail/Detail.xcodeproj">
    </FileRef>
    <FileRef
@@ -9,12 +12,6 @@
    </FileRef>
    <FileRef
       location = "group:Module/Home/Home.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Module/About/About.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Module/Common/Common.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Module/Routing/Routing.xcodeproj">

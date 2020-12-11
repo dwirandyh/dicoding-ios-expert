@@ -16,8 +16,6 @@
 		8D57601D257F631000A48FA0 /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D57601C257F631000A48FA0 /* HomeViewModelTest.swift */; };
 		8D6615EB258284C9007314D3 /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6615EA258284C9007314D3 /* Home.framework */; };
 		8D6615EC258284C9007314D3 /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6615EA258284C9007314D3 /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8D661668258323B3007314D3 /* About.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D661667258323B3007314D3 /* About.framework */; };
-		8D661669258323B3007314D3 /* About.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D661667258323B3007314D3 /* About.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D711FFF258203E80019C332 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D711FFE258203E80019C332 /* Common.framework */; };
 		8D712000258203E80019C332 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D711FFE258203E80019C332 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8DDCB67C25762A7D00B46D45 /* RestaurantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDCB67B25762A7D00B46D45 /* RestaurantApp.swift */; };
@@ -56,7 +54,6 @@
 				8D38DCAA25827E7E004E3453 /* Favorite.framework in Embed Frameworks */,
 				8D42A9802581E50400DD518C /* Detail.framework in Embed Frameworks */,
 				8D712000258203E80019C332 /* Common.framework in Embed Frameworks */,
-				8D661669258323B3007314D3 /* About.framework in Embed Frameworks */,
 				8D6615EC258284C9007314D3 /* Home.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -103,7 +100,6 @@
 				F50871D8060EAD3057491329 /* Pods_restaurant_app.framework in Frameworks */,
 				8D38DCA925827E7E004E3453 /* Favorite.framework in Frameworks */,
 				8D6615EB258284C9007314D3 /* Home.framework in Frameworks */,
-				8D661668258323B3007314D3 /* About.framework in Frameworks */,
 				8D42A97F2581E50400DD518C /* Detail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
