@@ -7,11 +7,11 @@
 
 import Foundation
 
-enum NetworkError: LocalizedError {
+public enum NetworkError: LocalizedError {
     case invalidResponse
     case empty
 
-    var errorDescription: String? {
+    public var errorDescription: String? {
         switch self {
         case .invalidResponse:
             return "Invalid response"
@@ -21,11 +21,11 @@ enum NetworkError: LocalizedError {
     }
 }
 
-enum DatabaseError: LocalizedError {
+public enum DatabaseError: LocalizedError {
     case requestFailed
     case invalidInstance
 
-    var errorDescription: String? {
+    public var errorDescription: String? {
         switch self {
         case .requestFailed:
             return "Request failed"

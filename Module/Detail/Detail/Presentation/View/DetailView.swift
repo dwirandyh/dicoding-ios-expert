@@ -13,11 +13,11 @@ struct DetailView: View {
 
     @Environment(\.presentationMode) var presentationMode
 
-    @ObservedObject var detailViewModel: DetailViewModel
+    @ObservedObject var detailViewModel: DetailViewModel<RunLoop>
 
     var restaurantId: String
 
-    public init(viewModel: DetailViewModel, restaurantId: String) {
+    public init(viewModel: DetailViewModel<RunLoop>, restaurantId: String) {
         self.detailViewModel = viewModel
         self.restaurantId = restaurantId
     }

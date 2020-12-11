@@ -13,7 +13,6 @@
 		8D38DCAA25827E7E004E3453 /* Favorite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D38DCA825827E7E004E3453 /* Favorite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D42A97F2581E50400DD518C /* Detail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D42A97E2581E50400DD518C /* Detail.framework */; };
 		8D42A9802581E50400DD518C /* Detail.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D42A97E2581E50400DD518C /* Detail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8D57601D257F631000A48FA0 /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D57601C257F631000A48FA0 /* HomeViewModelTest.swift */; };
 		8D6615EB258284C9007314D3 /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6615EA258284C9007314D3 /* Home.framework */; };
 		8D6615EC258284C9007314D3 /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6615EA258284C9007314D3 /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D711FFF258203E80019C332 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D711FFE258203E80019C332 /* Common.framework */; };
@@ -71,7 +70,6 @@
 		8D05CF3825823D800066814D /* RoutingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingManager.swift; sourceTree = "<group>"; };
 		8D38DCA825827E7E004E3453 /* Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D42A97E2581E50400DD518C /* Detail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Detail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D57601C257F631000A48FA0 /* HomeViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
 		8D6615EA258284C9007314D3 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D661667258323B3007314D3 /* About.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = About.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D711FFE258203E80019C332 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,30 +155,6 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		8D576019257F631000A48FA0 /* Feature */ = {
-			isa = PBXGroup;
-			children = (
-				8D57601A257F631000A48FA0 /* Home */,
-			);
-			path = Feature;
-			sourceTree = "<group>";
-		};
-		8D57601A257F631000A48FA0 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				8D57601B257F631000A48FA0 /* ViewModel */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		8D57601B257F631000A48FA0 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				8D57601C257F631000A48FA0 /* HomeViewModelTest.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		8DDCB66F25762A7D00B46D45 = {
 			isa = PBXGroup;
 			children = (
@@ -217,7 +191,6 @@
 		8DDCB68C25762A7E00B46D45 /* restaurant-appTests */ = {
 			isa = PBXGroup;
 			children = (
-				8D576019257F631000A48FA0 /* Feature */,
 				8DDCB68D25762A7E00B46D45 /* RestaurantAppTest.swift */,
 				8DDCB68F25762A7E00B46D45 /* Info.plist */,
 			);
@@ -533,7 +506,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DDCB68E25762A7E00B46D45 /* RestaurantAppTest.swift in Sources */,
-				8D57601D257F631000A48FA0 /* HomeViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,7 +715,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5B2L4KSFG2;
 				INFOPLIST_FILE = "restaurant-appTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -766,7 +738,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5B2L4KSFG2;
 				INFOPLIST_FILE = "restaurant-appTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -33,7 +33,7 @@ class HomeViewModel<S: Scheduler>: ObservableObject {
             .store(in: &self.cancellable)
     }
 
-    private func searchRestaurant(query: String) {
+    func searchRestaurant(query: String) {
         self.isLoading = true
         self.homeUseCase.searchRestaurants(query: query)
             .receive(on: self.scheduler)

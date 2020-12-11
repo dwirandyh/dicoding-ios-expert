@@ -11,7 +11,7 @@ import Resolver
 public extension Resolver {
     static func registerDetailService() {
         register {
-            DetailViewModel(detailUseCase: resolve())
+            DetailViewModel(detailUseCase: resolve(), scheduler: RunLoop.main)
         }
         register {
             DetailUseCaseImpl(repository: resolve()) as DetailUseCase

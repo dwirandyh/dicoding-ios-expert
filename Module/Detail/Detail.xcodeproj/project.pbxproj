@@ -21,6 +21,7 @@
 		8DD7052825826CE00081A0E0 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD7052725826CE00081A0E0 /* Common.framework */; };
 		8DD7052925826CE00081A0E0 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD7052725826CE00081A0E0 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8DEA753F2581E3A300E77828 /* Detail.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DEA753D2581E3A300E77828 /* Detail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DFAAAF725836BC100B552FA /* DetailViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFAAAF625836BC100B552FA /* DetailViewModelTest.swift */; };
 		8DFEBA03258261F700245E8A /* DetailDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFEBA02258261F700245E8A /* DetailDI.swift */; };
 		A8A2658073EC7FF23B5BB3C0 /* Pods_restaurant_app_Detail_DetailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5403A5C8B544C2B4C584DF73 /* Pods_restaurant_app_Detail_DetailTests.framework */; };
 		F41DAFA53529173FA6EFDDD6 /* Pods_restaurant_app_Detail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8376AC85E859D1729027C23 /* Pods_restaurant_app_Detail.framework */; };
@@ -72,6 +73,7 @@
 		8DEA753A2581E3A300E77828 /* Detail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Detail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEA753D2581E3A300E77828 /* Detail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Detail.h; sourceTree = "<group>"; };
 		8DEA753E2581E3A300E77828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DFAAAF625836BC100B552FA /* DetailViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTest.swift; sourceTree = "<group>"; };
 		8DFEBA02258261F700245E8A /* DetailDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDI.swift; sourceTree = "<group>"; };
 		93186D6AE2607C90CE3E148C /* Pods-restaurant-app-Detail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app-Detail.release.xcconfig"; path = "Target Support Files/Pods-restaurant-app-Detail/Pods-restaurant-app-Detail.release.xcconfig"; sourceTree = "<group>"; };
 		A5178201A996DA76E9B584F4 /* Pods-restaurant-app-Detail-DetailTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app-Detail-DetailTests.release.xcconfig"; path = "Target Support Files/Pods-restaurant-app-Detail-DetailTests/Pods-restaurant-app-Detail-DetailTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			children = (
 				8D711F46258200F10019C332 /* DetailTests.swift */,
 				8D711F48258200F10019C332 /* Info.plist */,
+				8DFAAAF625836BC100B552FA /* DetailViewModelTest.swift */,
 			);
 			path = DetailTests;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D711F47258200F10019C332 /* DetailTests.swift in Sources */,
+				8DFAAAF725836BC100B552FA /* DetailViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

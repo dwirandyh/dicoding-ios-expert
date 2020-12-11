@@ -9,20 +9,22 @@ import Foundation
 import Combine
 import Common
 
-class DetailViewModel: ObservableObject {
+class DetailViewModel<S: Scheduler>: ObservableObject {
 
     private var cancellable: Set<AnyCancellable> = []
+    private let scheduler: S
     private let detailUseCase: DetailUseCase
 
     @Published var restaurantDetail: RestaurantDetailModel?
 
-    init(detailUseCase: DetailUseCase) {
+    init(detailUseCase: DetailUseCase, scheduler: S) {
         self.detailUseCase = detailUseCase
+        self.scheduler = scheduler
     }
 
     func getDetailRestaurant(restaurantId: String) {
         self.detailUseCase.getRestaurantDetail(restaurantId: restaurantId)
-            .receive(on: RunLoop.main)
+            .receive(on: self.scheduler)
             .sink(receiveCompletion: { completion in
                 switch completion {
                 case .failure:
@@ -39,7 +41,7 @@ class DetailViewModel: ObservableObject {
     func addFavorite() {
         guard let restaurant = self.restaurantDetail else { return }
         self.detailUseCase.addFavorite(restaurant: restaurant)
-            .receive(on: RunLoop.main)
+            .receive(on: self.scheduler)
             .sink(receiveCompletion: { completion in
                 switch completion {
                 case .failure:

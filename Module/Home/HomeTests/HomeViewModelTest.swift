@@ -1,13 +1,14 @@
 //
 //  HomeViewModelTest.swift
-//  restaurant-appTests
+//  HomeTests
 //
-//  Created by Dwi Randy Herdinanto on 06/12/20.
+//  Created by Dwi Randy Herdinanto on 11/12/20.
 //
 
 import XCTest
 import Combine
-@testable import restaurant_app
+import Common
+@testable import Home
 
 final class HomeViewModelTest: XCTestCase {
 
@@ -54,6 +55,40 @@ final class HomeViewModelTest: XCTestCase {
 
         // When
         self.sut.getRestaurants()
+
+        // Then
+        XCTAssertEqual(self.sut.restaurants.count, 0)
+        XCTAssertFalse(self.sut.isLoading)
+    }
+
+    func testSearchRestaurant() throws {
+        // Given
+        let response: AnyPublisher<[RestaurantModel], Error>!
+        response = Future<[RestaurantModel], Error> { completion in
+            completion(.success(RestaurantModel.fakeRestaurantList()))
+        }.eraseToAnyPublisher()
+
+        self.homeUseCaseMock.searchRestaurantResponse = response
+
+        // When
+        self.sut.searchRestaurant(query: "kafe")
+
+        // Then
+        XCTAssertEqual(self.sut.restaurants, RestaurantModel.fakeRestaurantList())
+        XCTAssertFalse(self.sut.isLoading)
+    }
+
+    func testSearchRestaurantFailed() throws {
+        // Given
+        let response: AnyPublisher<[RestaurantModel], Error>!
+        response = Future<[RestaurantModel], Error> { completion in
+            completion(.failure(NetworkError.empty))
+        }.eraseToAnyPublisher()
+
+        self.homeUseCaseMock.searchRestaurantResponse = response
+
+        // When
+        self.sut.searchRestaurant(query: "")
 
         // Then
         XCTAssertEqual(self.sut.restaurants.count, 0)

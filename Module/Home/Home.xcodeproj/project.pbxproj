@@ -21,6 +21,9 @@
 		8D6615E825828465007314D3 /* RoutingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6615E725828465007314D3 /* RoutingExtension.swift */; };
 		8D98EBF5258353EC000FA5F5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D98EBF7258353EC000FA5F5 /* Localizable.strings */; };
 		8D98EC1B25835CAB000FA5F5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D98EC1A25835CAB000FA5F5 /* StringExtension.swift */; };
+		8DFB367B25836681008D4A71 /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFB367A25836681008D4A71 /* HomeViewModelTest.swift */; };
+		8DFB369925836840008D4A71 /* Routing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DFB369825836840008D4A71 /* Routing.framework */; };
+		8DFB369A25836841008D4A71 /* Routing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DFB369825836840008D4A71 /* Routing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				8D6615E2258283F9007314D3 /* Common.framework in Embed Frameworks */,
+				8DFB369A25836841008D4A71 /* Routing.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +70,8 @@
 		8D98EBF6258353EC000FA5F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8D98EBF92583541B000FA5F5 /* id-ID */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "id-ID"; path = "id-ID.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		8D98EC1A25835CAB000FA5F5 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		8DFB367A25836681008D4A71 /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
+		8DFB369825836840008D4A71 /* Routing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Routing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4443C750182145C508FB140 /* Pods-restaurant-app-Home-HomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app-Home-HomeTests.release.xcconfig"; path = "Target Support Files/Pods-restaurant-app-Home-HomeTests/Pods-restaurant-app-Home-HomeTests.release.xcconfig"; sourceTree = "<group>"; };
 		B7E0EAF46B6050F1A448F550 /* Pods-restaurant-app-Home-HomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app-Home-HomeTests.debug.xcconfig"; path = "Target Support Files/Pods-restaurant-app-Home-HomeTests/Pods-restaurant-app-Home-HomeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D4A8F5493004E1CA0555270B /* Pods_restaurant_app_Home_HomeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_restaurant_app_Home_HomeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +84,7 @@
 			files = (
 				4A0BDCE635040A3B0E611755 /* Pods_restaurant_app_Home.framework in Frameworks */,
 				8D6615E1258283F9007314D3 /* Common.framework in Frameworks */,
+				8DFB369925836840008D4A71 /* Routing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +103,7 @@
 		037FCBB6F465F30C8FE03667 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8DFB369825836840008D4A71 /* Routing.framework */,
 				8D6615E0258283F9007314D3 /* Common.framework */,
 				56201F12969698AB354BF823 /* Pods_restaurant_app_Home.framework */,
 				D4A8F5493004E1CA0555270B /* Pods_restaurant_app_Home_HomeTests.framework */,
@@ -154,6 +162,7 @@
 			children = (
 				8D125FD7258282AB0088684B /* HomeTests.swift */,
 				8D125FD9258282AB0088684B /* Info.plist */,
+				8DFB367A25836681008D4A71 /* HomeViewModelTest.swift */,
 			);
 			path = HomeTests;
 			sourceTree = "<group>";
@@ -408,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D125FD8258282AB0088684B /* HomeTests.swift in Sources */,
+				8DFB367B25836681008D4A71 /* HomeViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
