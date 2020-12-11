@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5495ACAFA07AAC7CC1BA809F /* Pods_restaurant_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65BE15257982F1BAFE31E7EB /* Pods_restaurant_appTests.framework */; };
 		8D05CF3925823D800066814D /* RoutingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D05CF3825823D800066814D /* RoutingManager.swift */; };
+		8D11B00725839E8700581696 /* Routing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D11B00625839E8700581696 /* Routing.framework */; };
+		8D11B00825839E8700581696 /* Routing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D11B00625839E8700581696 /* Routing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D38DCA925827E7E004E3453 /* Favorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D38DCA825827E7E004E3453 /* Favorite.framework */; };
 		8D38DCAA25827E7E004E3453 /* Favorite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D38DCA825827E7E004E3453 /* Favorite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D42A97F2581E50400DD518C /* Detail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D42A97E2581E50400DD518C /* Detail.framework */; };
@@ -54,6 +56,7 @@
 				8D38DCAA25827E7E004E3453 /* Favorite.framework in Embed Frameworks */,
 				8D42A9802581E50400DD518C /* Detail.framework in Embed Frameworks */,
 				8D712000258203E80019C332 /* Common.framework in Embed Frameworks */,
+				8D11B00825839E8700581696 /* Routing.framework in Embed Frameworks */,
 				8D6615EC258284C9007314D3 /* Home.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -68,6 +71,7 @@
 		61E28048EAFBEA0E5C861ED6 /* Pods-restaurant-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app.debug.xcconfig"; path = "Target Support Files/Pods-restaurant-app/Pods-restaurant-app.debug.xcconfig"; sourceTree = "<group>"; };
 		65BE15257982F1BAFE31E7EB /* Pods_restaurant_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_restaurant_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D05CF3825823D800066814D /* RoutingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingManager.swift; sourceTree = "<group>"; };
+		8D11B00625839E8700581696 /* Routing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Routing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D38DCA825827E7E004E3453 /* Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D42A97E2581E50400DD518C /* Detail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Detail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D6615EA258284C9007314D3 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +106,7 @@
 				8D38DCA925827E7E004E3453 /* Favorite.framework in Frameworks */,
 				8D6615EB258284C9007314D3 /* Home.framework in Frameworks */,
 				8D42A97F2581E50400DD518C /* Detail.framework in Frameworks */,
+				8D11B00725839E8700581696 /* Routing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +132,7 @@
 		0BC95F12ECDF27AD74371452 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D11B00625839E8700581696 /* Routing.framework */,
 				8D661667258323B3007314D3 /* About.framework */,
 				8D6615EA258284C9007314D3 /* Home.framework */,
 				8D38DCA825827E7E004E3453 /* Favorite.framework */,

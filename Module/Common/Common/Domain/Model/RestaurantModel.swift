@@ -42,7 +42,7 @@ public struct RestaurantDetailModel: Equatable, Identifiable {
     public let reviews: [ReviewModel]
     public var isFavorite: Bool
 
-    public init(id: String, name: String, description: String, city : String, address: String, smallPicture: String, mediumPicture: String, categories: String, foods: [String], drinks: [String], rating: Float, reviews: [ReviewModel], isFavorite: Bool) {
+    public init(id: String, name: String, description: String, city: String, address: String, smallPicture: String, mediumPicture: String, categories: String, foods: [String], drinks: [String], rating: Float, reviews: [ReviewModel], isFavorite: Bool) {
         self.id = id
         self.name = name
         self.description = description
