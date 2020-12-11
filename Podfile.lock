@@ -1,30 +1,35 @@
 PODS:
+  - About (1.0.0)
   - Alamofire (5.4.0)
-  - Realm (10.1.4):
-    - Realm/Headers (= 10.1.4)
-  - Realm/Headers (10.1.4)
-  - RealmSwift (10.1.4):
-    - Realm (= 10.1.4)
+  - Realm (10.1.2):
+    - Realm/Headers (= 10.1.2)
+  - Realm/Headers (10.1.2)
+  - RealmSwift (10.1.2):
+    - Realm (= 10.1.2)
   - Resolver (1.1.4)
 
 DEPENDENCIES:
+  - About
   - Alamofire
   - RealmSwift
   - Resolver
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Realm
     - RealmSwift
     - Resolver
+  https://github.com/dwirandyh/dicoding-ios-module-spec:
+    - About
 
 SPEC CHECKSUMS:
+  About: d10b3330658fbb25451d5df6f4d4556610392453
   Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
-  Realm: 80f4fb2971ccb9adc27a47d0955ae8e533a7030b
-  RealmSwift: 0e566ca714edb377bba8ea0811eafcea0b93734e
+  Realm: 031fdd4be7094d01b43af1a5e49766ab644bb800
+  RealmSwift: 43cf2e114baa9d17d34eb81e7d0def31f21cd444
   Resolver: 1f4c046255cbadfa97094692e16e940d4329779f
 
-PODFILE CHECKSUM: d8144c9159bc43328a501c99c9a8559493b8c948
+PODFILE CHECKSUM: 26e1ca6b4ac653e2dbdc2fc07c98ba012e24030c
 
 COCOAPODS: 1.10.0

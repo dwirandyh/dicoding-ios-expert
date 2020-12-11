@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Detail
+
+  Created by Dwi Randy Herdinanto on 11/12/20.
+  
+*/
+
+"overview" = "Overview";
+"food" = "Food";
+"beverage" = "Baverage";
+"rating" = "Rating";

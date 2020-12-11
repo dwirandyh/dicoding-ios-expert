@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Favorite
+
+  Created by Dwi Randy Herdinanto on 11/12/20.
+  
+*/
+
+"pageGreeting" = "Where Do You Want to Eat??";
+"pageTitle" = "Your Favorite";
+"favoriteEmpty" = "Yaahh :( \nYou don't have your favorite restaurant yet";

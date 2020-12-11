@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  restaurant-app
+
+  Created by Dwi Randy Herdinanto on 11/12/20.
+  
+*/
+"home" = "Home";
+"favorite" = "Favorite";
+"about" = "About";
+"loadingMessage" = "Loading,, Please Wait";
+"review" = "Review";
