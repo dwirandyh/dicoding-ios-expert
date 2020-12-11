@@ -9,6 +9,7 @@ import SwiftUI
 import Resolver
 import Routing
 import Favorite
+import About
 
 @main
 struct RestaurantApp: App {
@@ -20,17 +21,18 @@ struct RestaurantApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-                HomeView(viewModel: Resolver.resolve())
+                Routing.shared.navigateToHome()
                     .tabItem {
                         Image.icHouse
                         Text("Home")
                     }
+
                 Routing.shared.navigateToFavorite()
                     .tabItem {
                         Image.icFavoriteFill
                         Text("Favorite")
                     }
-                AboutView()
+                AboutView(name: "Dwi Randy", githubUrl: "https://github.com/dwirandyh", webUrl: "https://github.com/dwirandyh")
                     .tabItem {
                         Image.icAbout
                         Text("About")

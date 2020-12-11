@@ -6,10 +6,9 @@
 //
 
 import Foundation
-import Combine
 import Resolver
 
-extension Resolver {
+public extension Resolver {
     static func registerHomeServices() {
         register {
             HomeViewModel(homeUseCase: resolve(), scheduler: RunLoop.main)

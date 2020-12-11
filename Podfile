@@ -35,6 +35,20 @@ target 'restaurant-app' do
     end
   end
 
+  target 'Home' do
+    project './Module/Home/Home'
+
+    target 'HomeTests' do
+    end
+  end
+
+  target 'About' do
+    project './Module/About/About'
+
+    target 'AboutTests' do
+    end
+  end
+
   target 'Common' do
     project './Module/Common/Common'
 

@@ -15,19 +15,18 @@ public class Routing {
     public var routeToDetail: ((_ restaurantId: String) -> AnyView)?
 
     public func navigateToDetail(restaurantId: String) -> AnyView? {
-        return routeToDetail?(restaurantId)
+        return self.routeToDetail?(restaurantId)
     }
 
     public var routeToFavorite: (() -> AnyView)?
 
     public func navigateToFavorite() -> AnyView? {
-        return routeToFavorite?()
+        return self.routeToFavorite?()
+    }
+
+    public var routeToHome: (() -> AnyView)?
+
+    public func navigateToHome() -> AnyView? {
+        return self.routeToHome?()
     }
 }
-
-//public struct Routing<Content, T> : View where Content : View, T : View {
-//
-//    public static var shared = Routing()
-//
-//    var routeToDetail: ((_ restaurantId: String) -> View)
-//}

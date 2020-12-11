@@ -9,23 +9,22 @@
 /* Begin PBXBuildFile section */
 		5495ACAFA07AAC7CC1BA809F /* Pods_restaurant_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65BE15257982F1BAFE31E7EB /* Pods_restaurant_appTests.framework */; };
 		8D05CF3925823D800066814D /* RoutingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D05CF3825823D800066814D /* RoutingManager.swift */; };
-		8D15425625763D9700AE1D23 /* HomeDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D15425525763D9700AE1D23 /* HomeDI.swift */; };
 		8D38DCA925827E7E004E3453 /* Favorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D38DCA825827E7E004E3453 /* Favorite.framework */; };
 		8D38DCAA25827E7E004E3453 /* Favorite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D38DCA825827E7E004E3453 /* Favorite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D42A97F2581E50400DD518C /* Detail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D42A97E2581E50400DD518C /* Detail.framework */; };
 		8D42A9802581E50400DD518C /* Detail.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D42A97E2581E50400DD518C /* Detail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D57601D257F631000A48FA0 /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D57601C257F631000A48FA0 /* HomeViewModelTest.swift */; };
+		8D6615EB258284C9007314D3 /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6615EA258284C9007314D3 /* Home.framework */; };
+		8D6615EC258284C9007314D3 /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6615EA258284C9007314D3 /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8D661668258323B3007314D3 /* About.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D661667258323B3007314D3 /* About.framework */; };
+		8D661669258323B3007314D3 /* About.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D661667258323B3007314D3 /* About.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D711FFF258203E80019C332 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D711FFE258203E80019C332 /* Common.framework */; };
 		8D712000258203E80019C332 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D711FFE258203E80019C332 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8DDCB67C25762A7D00B46D45 /* RestaurantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDCB67B25762A7D00B46D45 /* RestaurantApp.swift */; };
-		8DDCB67E25762A7D00B46D45 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDCB67D25762A7D00B46D45 /* HomeView.swift */; };
 		8DDCB68025762A7E00B46D45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DDCB67F25762A7E00B46D45 /* Assets.xcassets */; };
 		8DDCB68E25762A7E00B46D45 /* RestaurantAppTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDCB68D25762A7E00B46D45 /* RestaurantAppTest.swift */; };
 		8DDCB69925762A7E00B46D45 /* RestaurantAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDCB69825762A7E00B46D45 /* RestaurantAppUITests.swift */; };
-		8DDCB6D22576358C00B46D45 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDCB6D12576358C00B46D45 /* HomeViewModel.swift */; };
-		8DDCB6DB2576359900B46D45 /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDCB6DA2576359900B46D45 /* HomeUseCase.swift */; };
 		8DDCB6E62576365000B46D45 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDCB6E52576365000B46D45 /* DependencyManager.swift */; };
-		8DF4F1DE257B8E7D0062D829 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4F1DD257B8E7D0062D829 /* AboutView.swift */; };
 		AF62C1C4418E340127F9A7C8 /* Pods_restaurant_app_restaurant_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6B6651EDD45405BEC6719F /* Pods_restaurant_app_restaurant_appUITests.framework */; };
 		F50871D8060EAD3057491329 /* Pods_restaurant_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEFACD42ACFB1A3E0AE054B /* Pods_restaurant_app.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +56,8 @@
 				8D38DCAA25827E7E004E3453 /* Favorite.framework in Embed Frameworks */,
 				8D42A9802581E50400DD518C /* Detail.framework in Embed Frameworks */,
 				8D712000258203E80019C332 /* Common.framework in Embed Frameworks */,
+				8D661669258323B3007314D3 /* About.framework in Embed Frameworks */,
+				8D6615EC258284C9007314D3 /* Home.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,14 +71,14 @@
 		61E28048EAFBEA0E5C861ED6 /* Pods-restaurant-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app.debug.xcconfig"; path = "Target Support Files/Pods-restaurant-app/Pods-restaurant-app.debug.xcconfig"; sourceTree = "<group>"; };
 		65BE15257982F1BAFE31E7EB /* Pods_restaurant_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_restaurant_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D05CF3825823D800066814D /* RoutingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingManager.swift; sourceTree = "<group>"; };
-		8D15425525763D9700AE1D23 /* HomeDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDI.swift; sourceTree = "<group>"; };
 		8D38DCA825827E7E004E3453 /* Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D42A97E2581E50400DD518C /* Detail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Detail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D57601C257F631000A48FA0 /* HomeViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
+		8D6615EA258284C9007314D3 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D661667258323B3007314D3 /* About.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = About.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D711FFE258203E80019C332 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DDCB67825762A7D00B46D45 /* restaurant-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "restaurant-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DDCB67B25762A7D00B46D45 /* RestaurantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantApp.swift; sourceTree = "<group>"; };
-		8DDCB67D25762A7D00B46D45 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8DDCB67F25762A7E00B46D45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DDCB68425762A7E00B46D45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DDCB68925762A7E00B46D45 /* restaurant-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "restaurant-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,10 +87,7 @@
 		8DDCB69425762A7E00B46D45 /* restaurant-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "restaurant-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DDCB69825762A7E00B46D45 /* RestaurantAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAppUITests.swift; sourceTree = "<group>"; };
 		8DDCB69A25762A7E00B46D45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8DDCB6D12576358C00B46D45 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		8DDCB6DA2576359900B46D45 /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCase.swift; sourceTree = "<group>"; };
 		8DDCB6E52576365000B46D45 /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
-		8DF4F1DD257B8E7D0062D829 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		CACBD10842308E558A6A8B5D /* Pods-restaurant-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app.release.xcconfig"; path = "Target Support Files/Pods-restaurant-app/Pods-restaurant-app.release.xcconfig"; sourceTree = "<group>"; };
 		EDBEBE65662B6B4DCB5FFB88 /* Pods-restaurant-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-appTests.debug.xcconfig"; path = "Target Support Files/Pods-restaurant-appTests/Pods-restaurant-appTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F1C855D1409BF393E2DC5FEE /* Pods-restaurant-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-appTests.release.xcconfig"; path = "Target Support Files/Pods-restaurant-appTests/Pods-restaurant-appTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +102,8 @@
 				8D711FFF258203E80019C332 /* Common.framework in Frameworks */,
 				F50871D8060EAD3057491329 /* Pods_restaurant_app.framework in Frameworks */,
 				8D38DCA925827E7E004E3453 /* Favorite.framework in Frameworks */,
+				8D6615EB258284C9007314D3 /* Home.framework in Frameworks */,
+				8D661668258323B3007314D3 /* About.framework in Frameworks */,
 				8D42A97F2581E50400DD518C /* Detail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +130,8 @@
 		0BC95F12ECDF27AD74371452 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D661667258323B3007314D3 /* About.framework */,
+				8D6615EA258284C9007314D3 /* Home.framework */,
 				8D38DCA825827E7E004E3453 /* Favorite.framework */,
 				8D711FFE258203E80019C332 /* Common.framework */,
 				8D42A97E2581E50400DD518C /* Detail.framework */,
@@ -208,7 +210,6 @@
 				8D38DCD925828083004E3453 /* App */,
 				8D05CF3725823D780066814D /* Router */,
 				8DDCB6C42576345500B46D45 /* DI */,
-				8DDCB6AE25762B0800B46D45 /* Feature */,
 				8DDCB6B125762B3700B46D45 /* Supporting Files */,
 			);
 			path = "restaurant-app";
@@ -233,58 +234,6 @@
 			path = "restaurant-appUITests";
 			sourceTree = "<group>";
 		};
-		8DDCB6A925762ABE00B46D45 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				8DDCB6D92576359200B46D45 /* UseCase */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		8DDCB6AB25762AC400B46D45 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				8DDCB6B025762B2B00B46D45 /* ViewModel */,
-				8DDCB6AF25762B2700B46D45 /* View */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		8DDCB6AD25762AEC00B46D45 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				8DDCB6CF2576357800B46D45 /* DI */,
-				8DDCB6A925762ABE00B46D45 /* Domain */,
-				8DDCB6AB25762AC400B46D45 /* Presentation */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		8DDCB6AE25762B0800B46D45 /* Feature */ = {
-			isa = PBXGroup;
-			children = (
-				8DF4F1DA257B8E4B0062D829 /* About */,
-				8DDCB6AD25762AEC00B46D45 /* Home */,
-			);
-			path = Feature;
-			sourceTree = "<group>";
-		};
-		8DDCB6AF25762B2700B46D45 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				8DDCB67D25762A7D00B46D45 /* HomeView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		8DDCB6B025762B2B00B46D45 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				8DDCB6D12576358C00B46D45 /* HomeViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		8DDCB6B125762B3700B46D45 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,46 +249,6 @@
 				8DDCB6E52576365000B46D45 /* DependencyManager.swift */,
 			);
 			path = DI;
-			sourceTree = "<group>";
-		};
-		8DDCB6CF2576357800B46D45 /* DI */ = {
-			isa = PBXGroup;
-			children = (
-				8D15425525763D9700AE1D23 /* HomeDI.swift */,
-			);
-			path = DI;
-			sourceTree = "<group>";
-		};
-		8DDCB6D92576359200B46D45 /* UseCase */ = {
-			isa = PBXGroup;
-			children = (
-				8DDCB6DA2576359900B46D45 /* HomeUseCase.swift */,
-			);
-			path = UseCase;
-			sourceTree = "<group>";
-		};
-		8DF4F1DA257B8E4B0062D829 /* About */ = {
-			isa = PBXGroup;
-			children = (
-				8DF4F1DB257B8E720062D829 /* Presentation */,
-			);
-			path = About;
-			sourceTree = "<group>";
-		};
-		8DF4F1DB257B8E720062D829 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				8DF4F1DC257B8E740062D829 /* View */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		8DF4F1DC257B8E740062D829 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				8DF4F1DD257B8E7D0062D829 /* AboutView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		9BAD5C4D740F81BD43895851 /* Pods */ = {
@@ -611,13 +520,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DDCB67E25762A7D00B46D45 /* HomeView.swift in Sources */,
 				8DDCB67C25762A7D00B46D45 /* RestaurantApp.swift in Sources */,
 				8D05CF3925823D800066814D /* RoutingManager.swift in Sources */,
-				8DF4F1DE257B8E7D0062D829 /* AboutView.swift in Sources */,
-				8D15425625763D9700AE1D23 /* HomeDI.swift in Sources */,
-				8DDCB6DB2576359900B46D45 /* HomeUseCase.swift in Sources */,
-				8DDCB6D22576358C00B46D45 /* HomeViewModel.swift in Sources */,
 				8DDCB6E62576365000B46D45 /* DependencyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

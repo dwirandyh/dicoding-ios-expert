@@ -14,5 +14,6 @@ public extension Routing {
     func registerAllRouter() {
         self.registerDetailRouting()
         self.registerFavoriteRouting()
+        self.registerHomeRouting()
     }
 }

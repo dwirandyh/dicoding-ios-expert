@@ -8,6 +8,12 @@
       location = "group:Module/Favorite/Favorite.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Module/Home/Home.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Module/About/About.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Module/Common/Common.xcodeproj">
    </FileRef>
    <FileRef

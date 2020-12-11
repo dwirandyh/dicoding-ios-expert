@@ -6,11 +6,20 @@
 //
 
 import SwiftUI
-import Common
 
-struct AboutView: View {
+public struct AboutView: View {
 
-    var body: some View {
+    let name: String
+    let githubUrl: String
+    let webUrl: String
+
+    public init(name: String, githubUrl: String, webUrl: String) {
+        self.name = name
+        self.githubUrl = githubUrl
+        self.webUrl = webUrl
+    }
+
+    public var body: some View {
         VStack(alignment: .leading, spacing: 30) {
 
             AboutProfile(name: "Dwi Randy H", role: "iOS Engineer")
@@ -41,12 +50,12 @@ struct AboutLink: View {
             Text(name)
                 .font(.system(size: 18))
                 .fontWeight(.medium)
-                .foregroundColor(.black100)
+                .foregroundColor(Color("black100"))
 
             Text(link)
                 .font(.system(size: 13))
                 .fontWeight(.regular)
-                .foregroundColor(.black80)
+                .foregroundColor(Color("black80"))
         }
     }
 }
@@ -63,13 +72,13 @@ struct AboutProfile: View {
     var body: some View {
         GeometryReader { geo in
             ZStack(alignment: .leading) {
-                Image.background
+                Image("profileBackground")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: geo.size.width, height: 200)
 
                 HStack(alignment: .center, spacing: 16) {
-                    Image.profile
+                    Image("profile")
                         .resizable()
                         .clipShape(Circle())
                         .frame(width: 80, height: 80)
@@ -79,7 +88,7 @@ struct AboutProfile: View {
                             .fontWeight(.bold)
                         Text(self.role)
                             .font(.system(size: 14))
-                            .foregroundColor(.black60)
+                            .foregroundColor(Color("black80"))
                     }
                 }
                 .padding([.leading, .trailing], 20)
@@ -93,7 +102,7 @@ struct AboutProfile: View {
 struct AboutView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            AboutView()
+            AboutView(name: "Dwi Randy", githubUrl: "https://github.com/dwirandyh", webUrl: "https://github.com/dwirandyh")
             AboutLink(name: "Github", link: "https://github.com/dwirandyh").previewLayout(.sizeThatFits)
             AboutProfile(name: "Dwi Randy", role: "iOS Engineer").previewLayout(.sizeThatFits)
         }

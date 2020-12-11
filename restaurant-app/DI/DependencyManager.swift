@@ -10,6 +10,7 @@ import RealmSwift
 import Resolver
 import Common
 import Detail
+import Home
 import Favorite
 
 extension Resolver: ResolverRegistering {
