@@ -22,11 +22,11 @@ struct FavoriteView: View {
         NavigationView {
             VStack(alignment: .leading) {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("Good morning,")
+                    Text("pageGreeting".localized(identifier: .bundleId))
                         .descriptionStyle()
                         .bold()
 
-                    Text("Your Favorite")
+                    Text("pageTitle".localized(identifier: .bundleId))
                         .font(.system(size: 24, weight: .bold))
                         .foregroundColor(.black100)
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -40,20 +40,27 @@ struct FavoriteView: View {
                         Spacer()
                         VStack {
                             LoadingWidget(isLoading: self.$favoriteViewModel.isLoading, style: .large)
-                            Text("Loading, please wait")
+                            Text("loadingMessage".localized(identifier: ""))
                         }
                         Spacer()
                     }
                 } else {
-
-                    ScrollView(.vertical, showsIndicators: false) {
-                        ForEach(self.favoriteViewModel.restaurants, id: \.id) { restaurant in
-                            NavigationLink(
-                                destination: Routing.shared.navigateToDetail(restaurantId: restaurant.id)) {
-                                RestaurantListWidget(restaurantModel: restaurant)
-                                    .padding(EdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8))
+                    if !self.favoriteViewModel.restaurants.isEmpty {
+                        ScrollView(.vertical, showsIndicators: false) {
+                            ForEach(self.favoriteViewModel.restaurants, id: \.id) { restaurant in
+                                NavigationLink(
+                                    destination: Routing.shared.navigateToDetail(restaurantId: restaurant.id)) {
+                                    RestaurantListWidget(restaurantModel: restaurant)
+                                        .padding(EdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8))
+                                }
                             }
                         }
+                    } else {
+                        Text("favoriteEmpty".localized(identifier: .bundleId))
+                            .titleStyle()
+                            .multilineTextAlignment(.center)
+                            .frame(maxWidth: .infinity)
+                            .padding()
                     }
                 }
 

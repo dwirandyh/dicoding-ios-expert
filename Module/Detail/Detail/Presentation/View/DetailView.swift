@@ -95,7 +95,7 @@ struct DetailView: View {
                     VStack(alignment: .leading, spacing: 24) {
 
                         VStack(alignment: .leading, spacing: 8) {
-                            Text("Overview")
+                            Text("overview".localized(identifier: .bundleId))
                                 .titleSectionStyle()
 
                             Text(self.detailViewModel.restaurantDetail?.description ?? "")
@@ -104,7 +104,7 @@ struct DetailView: View {
                         }
 
                         VStack(alignment: .leading, spacing: 16) {
-                            Text("Food")
+                            Text("food".localized(identifier: .bundleId))
                                 .titleSectionStyle()
 
                             LazyVGrid(columns: gridItemLayout, spacing: 16) {
@@ -115,7 +115,7 @@ struct DetailView: View {
                         }
 
                         VStack(alignment: .leading, spacing: 16) {
-                            Text("Baverage")
+                            Text("beverage".localized(identifier: .bundleId))
                                 .titleSectionStyle()
 
                             LazyVGrid(columns: gridItemLayout, spacing: 16) {
@@ -126,11 +126,13 @@ struct DetailView: View {
                         }
 
                         VStack(alignment: .leading, spacing: 8) {
-                            Text("Rating")
+                            Text("rating".localized(identifier: .bundleId))
                                 .titleSectionStyle()
 
                             HStack(spacing: 16) {
-                                RatingWidget(rating: self.detailViewModel.restaurantDetail?.rating ?? 0)
+                                RatingWidget(
+                                    rating: self.detailViewModel.restaurantDetail?.rating ?? 0,
+                                    reviewCount: self.detailViewModel.restaurantDetail?.reviews.count ?? 0)
                             }
 
                             Spacer()

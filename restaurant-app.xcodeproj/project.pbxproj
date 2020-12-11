@@ -18,6 +18,7 @@
 		8D6615EC258284C9007314D3 /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6615EA258284C9007314D3 /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D711FFF258203E80019C332 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D711FFE258203E80019C332 /* Common.framework */; };
 		8D712000258203E80019C332 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D711FFE258203E80019C332 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8D98EC3E25835E76000FA5F5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D98EC4025835E76000FA5F5 /* Localizable.strings */; };
 		8DDCB67C25762A7D00B46D45 /* RestaurantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDCB67B25762A7D00B46D45 /* RestaurantApp.swift */; };
 		8DDCB68025762A7E00B46D45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DDCB67F25762A7E00B46D45 /* Assets.xcassets */; };
 		8DDCB68E25762A7E00B46D45 /* RestaurantAppTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDCB68D25762A7E00B46D45 /* RestaurantAppTest.swift */; };
@@ -74,6 +75,8 @@
 		8D6615EA258284C9007314D3 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D661667258323B3007314D3 /* About.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = About.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D711FFE258203E80019C332 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D98EC3F25835E76000FA5F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8D98EC4325835E7A000FA5F5 /* id-ID */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "id-ID"; path = "id-ID.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		8DDCB67825762A7D00B46D45 /* restaurant-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "restaurant-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DDCB67B25762A7D00B46D45 /* RestaurantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantApp.swift; sourceTree = "<group>"; };
 		8DDCB67F25762A7E00B46D45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -235,6 +238,7 @@
 			children = (
 				8DDCB67F25762A7E00B46D45 /* Assets.xcassets */,
 				8DDCB68425762A7E00B46D45 /* Info.plist */,
+				8D98EC4025835E76000FA5F5 /* Localizable.strings */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -352,6 +356,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"id-ID",
 			);
 			mainGroup = 8DDCB66F25762A7D00B46D45;
 			productRefGroup = 8DDCB67925762A7D00B46D45 /* Products */;
@@ -371,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DDCB68025762A7E00B46D45 /* Assets.xcassets in Resources */,
+				8D98EC3E25835E76000FA5F5 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +559,18 @@
 			targetProxy = 8DDCB69525762A7E00B46D45 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8D98EC4025835E76000FA5F5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D98EC3F25835E76000FA5F5 /* en */,
+				8D98EC4325835E7A000FA5F5 /* id-ID */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8DDCB69B25762A7E00B46D45 /* Debug */ = {

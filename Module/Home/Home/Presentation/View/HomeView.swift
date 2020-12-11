@@ -23,11 +23,11 @@ struct HomeView: View {
         NavigationView {
             VStack(alignment: .leading) {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("Good morning,")
+                    Text("pageGreeting".localized(identifier: .bundleId))
                         .descriptionStyle()
                         .bold()
 
-                    Text("Happy Freeyay!")
+                    Text("pageTitle".localized(identifier: .bundleId))
                         .font(.system(size: 24, weight: .bold))
                         .foregroundColor(.black100)
                 }
@@ -39,7 +39,7 @@ struct HomeView: View {
                     Image.icSearch
                         .foregroundColor(.black100)
 
-                    TextField("Search restaurant", text: self.$homeViewModel.keyword)
+                    TextField("searchRestaurant".localized(identifier: .bundleId), text: self.$homeViewModel.keyword)
                 }
                 .frame(maxWidth: .infinity)
                 .padding(16)
@@ -54,7 +54,7 @@ struct HomeView: View {
                         Spacer()
                         VStack {
                             LoadingWidget(isLoading: self.$homeViewModel.isLoading, style: .large)
-                            Text("Loading, please wait")
+                            Text("loadingMessage".localized(identifier: ""))
                         }
                         Spacer()
                     }

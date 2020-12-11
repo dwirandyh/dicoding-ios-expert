@@ -10,9 +10,11 @@ import SwiftUI
 public struct RatingWidget: View {
 
     var rating: Float = 4.2
+    var reviewCount: Int
 
-    public init(rating: Float) {
+    public init(rating: Float, reviewCount: Int) {
         self.rating = rating
+        self.reviewCount = reviewCount
     }
 
     public var body: some View {
@@ -32,7 +34,7 @@ public struct RatingWidget: View {
                     .bold()
                     .descriptionStyle()
             }
-            Text("180 Reviews")
+            Text("\(reviewCount) " + "review".localized(identifier: ""))
                 .foregroundColor(.black80)
                 .font(.system(size: 14))
         }
@@ -41,6 +43,6 @@ public struct RatingWidget: View {
 
 struct Rating_Previews: PreviewProvider {
     static var previews: some View {
-        RatingWidget(rating: 4.2)
+        RatingWidget(rating: 4.2, reviewCount: 4)
     }
 }

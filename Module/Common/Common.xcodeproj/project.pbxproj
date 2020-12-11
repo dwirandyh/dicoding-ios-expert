@@ -37,6 +37,7 @@
 		8D711FF8258203890019C332 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D711FE42582037A0019C332 /* NetworkError.swift */; };
 		8D711FF9258203890019C332 /* ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D711FE52582037A0019C332 /* ObjectMapper.swift */; };
 		8D7120A8258206830019C332 /* DataFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7120A7258206830019C332 /* DataFaker.swift */; };
+		8D98EBFC258354A5000FA5F5 /* StringLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D98EBFB258354A5000FA5F5 /* StringLocalization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		8D711FE42582037A0019C332 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		8D711FE52582037A0019C332 /* ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMapper.swift; sourceTree = "<group>"; };
 		8D7120A7258206830019C332 /* DataFaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFaker.swift; sourceTree = "<group>"; };
+		8D98EBFB258354A5000FA5F5 /* StringLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLocalization.swift; sourceTree = "<group>"; };
 		B6D1CBA6F49A6C4030C00285 /* Pods-restaurant-app-Common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app-Common.debug.xcconfig"; path = "Target Support Files/Pods-restaurant-app-Common/Pods-restaurant-app-Common.debug.xcconfig"; sourceTree = "<group>"; };
 		D4ED0D9029EB67246D8C1927 /* Pods_restaurant_app_Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_restaurant_app_Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB29D96EAEE4AE3F70D7CC15 /* Pods_restaurant_app_Common_CommonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_restaurant_app_Common_CommonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -299,6 +301,7 @@
 			children = (
 				8D711FE42582037A0019C332 /* NetworkError.swift */,
 				8D711FE52582037A0019C332 /* ObjectMapper.swift */,
+				8D98EBFB258354A5000FA5F5 /* StringLocalization.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 				8D711FCB258203560019C332 /* RestaurantDetailItem.swift in Sources */,
 				8D711FC22582034B0019C332 /* RestaurantEntity.swift in Sources */,
 				8D711FE82582037E0019C332 /* ResourceHelper.swift in Sources */,
+				8D98EBFC258354A5000FA5F5 /* StringLocalization.swift in Sources */,
 				8D711FCD258203560019C332 /* RestaurantDetailReview.swift in Sources */,
 				8D711FCA258203560019C332 /* RestaurantDetailMenu.swift in Sources */,
 				8D711FF5258203850019C332 /* ImageNetwork.swift in Sources */,

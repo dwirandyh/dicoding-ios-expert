@@ -20,6 +20,8 @@
 		8D512F4F25827CB700E91D8C /* Favorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D512F4525827CB700E91D8C /* Favorite.framework */; };
 		8D512F5425827CB700E91D8C /* FavoriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D512F5325827CB700E91D8C /* FavoriteTests.swift */; };
 		8D512F5625827CB700E91D8C /* Favorite.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D512F4825827CB700E91D8C /* Favorite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D98EC722583624B000FA5F5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D98EC742583624B000FA5F5 /* Localizable.strings */; };
+		8D98EC78258362A6000FA5F5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D98EC77258362A6000FA5F5 /* StringExtension.swift */; };
 		E49F9ADA19499D23386F7F1A /* Pods_restaurant_app_Favorite_FavoriteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A3E0BE5E178472794E0D4D /* Pods_restaurant_app_Favorite_FavoriteTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,9 @@
 		8D512F4E25827CB700E91D8C /* FavoriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavoriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D512F5325827CB700E91D8C /* FavoriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTests.swift; sourceTree = "<group>"; };
 		8D512F5525827CB700E91D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D98EC732583624B000FA5F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8D98EC762583624E000FA5F5 /* id-ID */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "id-ID"; path = "id-ID.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		8D98EC77258362A6000FA5F5 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		8D9981638FE396A530B59EFE /* Pods-restaurant-app-Favorite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app-Favorite.release.xcconfig"; path = "Target Support Files/Pods-restaurant-app-Favorite/Pods-restaurant-app-Favorite.release.xcconfig"; sourceTree = "<group>"; };
 		A13BA4BB7EC5607EBE21098C /* Pods-restaurant-app-Favorite-FavoriteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app-Favorite-FavoriteTests.release.xcconfig"; path = "Target Support Files/Pods-restaurant-app-Favorite-FavoriteTests/Pods-restaurant-app-Favorite-FavoriteTests.release.xcconfig"; sourceTree = "<group>"; };
 		CBDCBF25C6B397092FC93C6D /* Pods-restaurant-app-Favorite-FavoriteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app-Favorite-FavoriteTests.debug.xcconfig"; path = "Target Support Files/Pods-restaurant-app-Favorite-FavoriteTests/Pods-restaurant-app-Favorite-FavoriteTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -157,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				8D38DCB425827F3B004E3453 /* RoutingExtension.swift */,
+				8D98EC77258362A6000FA5F5 /* StringExtension.swift */,
 			);
 			path = External;
 			sourceTree = "<group>";
@@ -190,6 +196,7 @@
 				8D38DC8525827DD8004E3453 /* Presentation */,
 				8D512F4825827CB700E91D8C /* Favorite.h */,
 				8D512F4925827CB700E91D8C /* Info.plist */,
+				8D98EC742583624B000FA5F5 /* Localizable.strings */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -293,6 +300,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"id-ID",
 			);
 			mainGroup = 8D512F3B25827CB700E91D8C;
 			productRefGroup = 8D512F4625827CB700E91D8C /* Products */;
@@ -310,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D98EC722583624B000FA5F5 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +402,7 @@
 			files = (
 				8D38DCB025827E9C004E3453 /* FavoriteDI.swift in Sources */,
 				8D38DC8B25827DD8004E3453 /* FavoriteView.swift in Sources */,
+				8D98EC78258362A6000FA5F5 /* StringExtension.swift in Sources */,
 				8D38DCAD25827E99004E3453 /* FavoriteUseCase.swift in Sources */,
 				8D38DC8A25827DD8004E3453 /* FavoriteViewModel.swift in Sources */,
 				8D38DCB525827F3B004E3453 /* RoutingExtension.swift in Sources */,
@@ -416,6 +426,18 @@
 			targetProxy = 8D512F5025827CB700E91D8C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8D98EC742583624B000FA5F5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D98EC732583624B000FA5F5 /* en */,
+				8D98EC762583624E000FA5F5 /* id-ID */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8D512F5725827CB700E91D8C /* Debug */ = {

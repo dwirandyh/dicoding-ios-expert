@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Home
+
+  Created by Dwi Randy Herdinanto on 11/12/20.
+  
+*/
+"pageGreeting" = "Good Morning";
+"pageTitle" = "Happy Freeyay";
+"searchRestaurant" = "Search Restaurant";

@@ -24,18 +24,18 @@ struct RestaurantApp: App {
                 Routing.shared.navigateToHome()
                     .tabItem {
                         Image.icHouse
-                        Text("Home")
+                        Text("home".localized(identifier: ""))
                     }
 
                 Routing.shared.navigateToFavorite()
                     .tabItem {
                         Image.icFavoriteFill
-                        Text("Favorite")
+                        Text("favorite".localized(identifier: ""))
                     }
                 AboutView(name: "Dwi Randy", githubUrl: "https://github.com/dwirandyh", webUrl: "https://github.com/dwirandyh")
                     .tabItem {
                         Image.icAbout
-                        Text("About")
+                        Text("about".localized(identifier: ""))
                     }
             }
         }

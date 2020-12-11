@@ -13,6 +13,8 @@
 		8D711EF72581FA830019C332 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D711EF62581FA830019C332 /* Test.swift */; };
 		8D711F47258200F10019C332 /* DetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D711F46258200F10019C332 /* DetailTests.swift */; };
 		8D711F49258200F10019C332 /* Detail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DEA753A2581E3A300E77828 /* Detail.framework */; };
+		8D98EC632583608A000FA5F5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D98EC622583608A000FA5F5 /* StringExtension.swift */; };
+		8D98EC68258360CB000FA5F5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D98EC6A258360CB000FA5F5 /* Localizable.strings */; };
 		8DD704D92582642E0081A0E0 /* RoutingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD704D82582642E0081A0E0 /* RoutingExtension.swift */; };
 		8DD704DD2582643D0081A0E0 /* Routing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD704DC2582643D0081A0E0 /* Routing.framework */; };
 		8DD704DE2582643D0081A0E0 /* Routing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD704DC2582643D0081A0E0 /* Routing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -61,6 +63,9 @@
 		8D711F44258200F10019C332 /* DetailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D711F46258200F10019C332 /* DetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTests.swift; sourceTree = "<group>"; };
 		8D711F48258200F10019C332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D98EC622583608A000FA5F5 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		8D98EC69258360CB000FA5F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8D98EC6C258360D1000FA5F5 /* id-ID */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "id-ID"; path = "id-ID.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		8DD704D82582642E0081A0E0 /* RoutingExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingExtension.swift; sourceTree = "<group>"; };
 		8DD704DC2582643D0081A0E0 /* Routing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Routing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD7052725826CE00081A0E0 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				8DD704D82582642E0081A0E0 /* RoutingExtension.swift */,
+				8D98EC622583608A000FA5F5 /* StringExtension.swift */,
 			);
 			path = External;
 			sourceTree = "<group>";
@@ -196,6 +202,7 @@
 				8DEA753D2581E3A300E77828 /* Detail.h */,
 				8DEA753E2581E3A300E77828 /* Info.plist */,
 				8D711EF62581FA830019C332 /* Test.swift */,
+				8D98EC6A258360CB000FA5F5 /* Localizable.strings */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -299,6 +306,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"id-ID",
 			);
 			mainGroup = 8DEA75302581E3A300E77828;
 			productRefGroup = 8DEA753B2581E3A300E77828 /* Products */;
@@ -323,6 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D98EC68258360CB000FA5F5 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DD704D92582642E0081A0E0 /* RoutingExtension.swift in Sources */,
+				8D98EC632583608A000FA5F5 /* StringExtension.swift in Sources */,
 				8D711EF72581FA830019C332 /* Test.swift in Sources */,
 				8D05CF2E258216020066814D /* DetailUseCase.swift in Sources */,
 				8D05CF342582160A0066814D /* DetailView.swift in Sources */,
@@ -423,6 +433,18 @@
 			targetProxy = 8D711F4A258200F10019C332 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8D98EC6A258360CB000FA5F5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D98EC69258360CB000FA5F5 /* en */,
+				8D98EC6C258360D1000FA5F5 /* id-ID */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8D711F4D258200F10019C332 /* Debug */ = {

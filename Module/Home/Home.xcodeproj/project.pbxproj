@@ -19,6 +19,8 @@
 		8D6615E1258283F9007314D3 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6615E0258283F9007314D3 /* Common.framework */; };
 		8D6615E2258283F9007314D3 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6615E0258283F9007314D3 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D6615E825828465007314D3 /* RoutingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6615E725828465007314D3 /* RoutingExtension.swift */; };
+		8D98EBF5258353EC000FA5F5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D98EBF7258353EC000FA5F5 /* Localizable.strings */; };
+		8D98EC1B25835CAB000FA5F5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D98EC1A25835CAB000FA5F5 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,9 @@
 		8D6615D3258283C6007314D3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8D6615E0258283F9007314D3 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D6615E725828465007314D3 /* RoutingExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingExtension.swift; sourceTree = "<group>"; };
+		8D98EBF6258353EC000FA5F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8D98EBF92583541B000FA5F5 /* id-ID */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "id-ID"; path = "id-ID.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		8D98EC1A25835CAB000FA5F5 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		A4443C750182145C508FB140 /* Pods-restaurant-app-Home-HomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app-Home-HomeTests.release.xcconfig"; path = "Target Support Files/Pods-restaurant-app-Home-HomeTests/Pods-restaurant-app-Home-HomeTests.release.xcconfig"; sourceTree = "<group>"; };
 		B7E0EAF46B6050F1A448F550 /* Pods-restaurant-app-Home-HomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurant-app-Home-HomeTests.debug.xcconfig"; path = "Target Support Files/Pods-restaurant-app-Home-HomeTests/Pods-restaurant-app-Home-HomeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D4A8F5493004E1CA0555270B /* Pods_restaurant_app_Home_HomeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_restaurant_app_Home_HomeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +144,7 @@
 				8D6615D5258283C6007314D3 /* Presentation */,
 				8D125FCC258282AB0088684B /* Home.h */,
 				8D125FCD258282AB0088684B /* Info.plist */,
+				8D98EBF7258353EC000FA5F5 /* Localizable.strings */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -205,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				8D6615E725828465007314D3 /* RoutingExtension.swift */,
+				8D98EC1A25835CAB000FA5F5 /* StringExtension.swift */,
 			);
 			path = External;
 			sourceTree = "<group>";
@@ -287,6 +294,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"id-ID",
 			);
 			mainGroup = 8D125FBF258282AB0088684B;
 			productRefGroup = 8D125FCA258282AB0088684B /* Products */;
@@ -304,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D98EBF5258353EC000FA5F5 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +396,7 @@
 			files = (
 				8D6615DA258283E7007314D3 /* HomeUseCase.swift in Sources */,
 				8D6615DD258283E7007314D3 /* HomeView.swift in Sources */,
+				8D98EC1B25835CAB000FA5F5 /* StringExtension.swift in Sources */,
 				8D6615DC258283E7007314D3 /* HomeDI.swift in Sources */,
 				8D6615DB258283E7007314D3 /* HomeViewModel.swift in Sources */,
 				8D6615E825828465007314D3 /* RoutingExtension.swift in Sources */,
@@ -411,11 +421,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		8D98EBF7258353EC000FA5F5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D98EBF6258353EC000FA5F5 /* en */,
+				8D98EBF92583541B000FA5F5 /* id-ID */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		8D125FDB258282AB0088684B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -480,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
