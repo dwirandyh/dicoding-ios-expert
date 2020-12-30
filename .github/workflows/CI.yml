@@ -86,6 +86,9 @@ jobs:
       - name: Build
         run: xcodebuild clean build test -workspace RestaurantApp.xcworkspace -scheme "restaurant-app" -sdk iphonesimulator -destination "platform=iOS Simulator,OS=14.2,name=iPhone 11 Pro" -derivedDataPath Build/ -enableCodeCoverage YES ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
 
+      - name: Create Code Coverage Report
+        run: bash xccov-to-sonarqube-generic.sh Build/Logs/Test/*.xcresult/ > Coverage/sonarqube-generic-coverage.xml
+
       - name: Cache Sonar Coverage
         id: cache-sonar-coverage
         uses: actions/cache@v2
@@ -94,10 +97,6 @@ jobs:
           key: coverage-${{ hashFiles('**/Coverage/sonarqube-generic-coverage.xml') }}
           restore-keys: |
             coverage-
-
-      - name: Create Code Coverage Report
-        run: bash xccov-to-sonarqube-generic.sh Build/Logs/Test/*.xcresult/ > Coverage/sonarqube-generic-coverage.xml
-
 
   sonarcloud:
     name: Analyze with SonarCloud
