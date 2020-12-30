@@ -56,5 +56,11 @@ jobs:
       - name: Select Xcode
         run: sudo xcode-select -switch /Applications/Xcode_12.2.app
 
+      - name: Load Pods
+        uses: actions/cache@v2
+        with:
+          path: Pods
+          key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+
       - name: Build
         run: xcodebuild build -workspace RestaurantApp.xcworkspace -scheme "restaurant-app" -sdk iphonesimulator -destination "platform=iOS Simulator,OS=14.2,name=iPhone 11 Pro" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
