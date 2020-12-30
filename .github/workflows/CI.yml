@@ -89,14 +89,11 @@ jobs:
       - name: Create Code Coverage Report
         run: bash xccov-to-sonarqube-generic.sh Build/Logs/Test/*.xcresult/ > Coverage/sonarqube-generic-coverage.xml
 
-      - name: Cache Sonar Coverage
-        id: cache-sonar-coverage
-        uses: actions/cache@v2
+      - name: Upload Coverage Report to Artifact
+        uses: actions/upload-artifact@v2
         with:
-          path: Coverage
-          key: coverage-${{ hashFiles('**/Coverage/sonarqube-generic-coverage.xml') }}
-          restore-keys: |
-            coverage-
+          name: coverage-report
+          path: Coverage/sonarqube-generic-coverage.xml
 
   sonarcloud:
     name: Analyze with SonarCloud
@@ -108,13 +105,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Load Code Coverage Report
-        uses: actions/cache@v2
+      - name: Download Coverage Report from Artifact
+        uses: actions/download-artifact@v2
         with:
-          path: Coverage
-          key: coverage-${{ hashFiles('**/Coverage/sonarqube-generic-coverage.xml') }}
-          restore-keys: |
-            coverage-
+          name: coverage-report
 
       - name: SonarCloud Scan
         uses: sonarsource/sonarcloud-github-action@master
