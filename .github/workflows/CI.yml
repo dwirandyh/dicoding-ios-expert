@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - development
+  pull_request:
+    branches:
+      - main
+      - development
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Application/Xcode_12.app
+
+      - name: Build
+        run: xcodebuild build -workspace RestaurantApp.xcworkspace -scheme "restaurant-app" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+
+  test:
+    runs-on: macos-latest
+    
+    steps:
+      - uses: action/checkout@v2
+
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Application/Xcode_12.app
+
+      - name: Run The Test
+        run: xcodebuild test -workspace RestaurantApp.xcworkspace -scheme "restaurant-app" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
