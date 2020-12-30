@@ -1,5 +1,5 @@
 <coverage version="1">
-  <file path="./dicoding-ios-expert/Module/Detail/DetailTests/DetailViewModelTest.swift">
+  <file path="./Module/Detail/DetailTests/DetailViewModelTest.swift">
     <lineToCover lineNumber="15" covered="true"/>
     <lineToCover lineNumber="20" covered="true"/>
     <lineToCover lineNumber="21" covered="true"/>
@@ -68,7 +68,7 @@
     <lineToCover lineNumber="98" covered="true"/>
     <lineToCover lineNumber="99" covered="true"/>
   </file>
-  <file path="/Users/mobiledevmac14/Data Randy/My Lab/IOS Development/Dicoding/dicoding-ios-expert/Module/Home/HomeTests/HomeTests.swift">
+  <file path="/Module/Home/HomeTests/HomeTests.swift">
     <lineToCover lineNumber="13" covered="true"/>
     <lineToCover lineNumber="14" covered="true"/>
     <lineToCover lineNumber="15" covered="true"/>
@@ -86,7 +86,7 @@
     <lineToCover lineNumber="30" covered="true"/>
     <lineToCover lineNumber="31" covered="true"/>
   </file>
-  <file path="/Users/mobiledevmac14/Data Randy/My Lab/IOS Development/Dicoding/dicoding-ios-expert/restaurant-app/App/RestaurantApp.swift">
+  <file path="dicoding-ios-expert/restaurant-app/App/RestaurantApp.swift">
     <lineToCover lineNumber="17" covered="true"/>
     <lineToCover lineNumber="18" covered="true"/>
     <lineToCover lineNumber="19" covered="true"/>
@@ -113,14 +113,14 @@
     <lineToCover lineNumber="41" covered="true"/>
     <lineToCover lineNumber="42" covered="true"/>
   </file>
-  <file path="/Users/mobiledevmac14/Data Randy/My Lab/IOS Development/Dicoding/dicoding-ios-expert/restaurant-app/Router/RoutingManager.swift">
+  <file path="../../restaurant-app/Router/RoutingManager.swift">
     <lineToCover lineNumber="14" covered="true"/>
     <lineToCover lineNumber="15" covered="true"/>
     <lineToCover lineNumber="16" covered="true"/>
     <lineToCover lineNumber="17" covered="true"/>
     <lineToCover lineNumber="18" covered="true"/>
   </file>
-  <file path="/Users/mobiledevmac14/Data Randy/My Lab/IOS Development/Dicoding/dicoding-ios-expert/Module/Detail/DetailTests/DetailTests.swift">
+  <file path="../Module/Detail/DetailTests/DetailTests.swift">
     <lineToCover lineNumber="12" covered="false"/>
     <lineToCover lineNumber="13" covered="false"/>
     <lineToCover lineNumber="14" covered="false"/>
