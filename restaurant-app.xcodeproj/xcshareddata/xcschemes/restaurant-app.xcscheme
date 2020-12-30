@@ -39,52 +39,38 @@
          </BuildableReference>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8DDCB68825762A7E00B46D45"
-            BuildableName = "restaurant-appTests.xctest"
-            BlueprintName = "restaurant-appTests"
-            ReferencedContainer = "container:restaurant-app.xcodeproj">
+            BlueprintIdentifier = "8D125FC8258282AB0088684B"
+            BuildableName = "Home.framework"
+            BlueprintName = "Home"
+            ReferencedContainer = "container:Module/Home/Home.xcodeproj">
          </BuildableReference>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8DDCB69325762A7E00B46D45"
-            BuildableName = "restaurant-appUITests.xctest"
-            BlueprintName = "restaurant-appUITests"
-            ReferencedContainer = "container:restaurant-app.xcodeproj">
-         </BuildableReference>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D711F43258200F10019C332"
-            BuildableName = "DetailTests.xctest"
-            BlueprintName = "DetailTests"
-            ReferencedContainer = "container:Module/Detail/Detail.xcodeproj">
-         </BuildableReference>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D711F7C258202A20019C332"
-            BuildableName = "CommonTests.xctest"
-            BlueprintName = "CommonTests"
+            BlueprintIdentifier = "8D711F73258202A20019C332"
+            BuildableName = "Common.framework"
+            BlueprintName = "Common"
             ReferencedContainer = "container:Module/Common/Common.xcodeproj">
          </BuildableReference>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D512F4D25827CB700E91D8C"
-            BuildableName = "FavoriteTests.xctest"
-            BlueprintName = "FavoriteTests"
-            ReferencedContainer = "container:Module/Favorite/Favorite.xcodeproj">
+            BlueprintIdentifier = "8DEA75392581E3A300E77828"
+            BuildableName = "Detail.framework"
+            BlueprintName = "Detail"
+            ReferencedContainer = "container:Module/Detail/Detail.xcodeproj">
          </BuildableReference>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8DFEBA182582629000245E8A"
-            BuildableName = "RoutingTests.xctest"
-            BlueprintName = "RoutingTests"
+            BlueprintIdentifier = "8DFEBA0F2582629000245E8A"
+            BuildableName = "Routing.framework"
+            BlueprintName = "Routing"
             ReferencedContainer = "container:Module/Routing/Routing.xcodeproj">
          </BuildableReference>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D125FD1258282AB0088684B"
-            BuildableName = "HomeTests.xctest"
-            BlueprintName = "HomeTests"
-            ReferencedContainer = "container:Module/Home/Home.xcodeproj">
+            BlueprintIdentifier = "8D512F4425827CB700E91D8C"
+            BuildableName = "Favorite.framework"
+            BlueprintName = "Favorite"
+            ReferencedContainer = "container:Module/Favorite/Favorite.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>

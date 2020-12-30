@@ -5,7 +5,11 @@ function convert_file {
   local xccovarchive_file="$1"
   local file_name="$2"
   local xccov_options="$3"
-  echo "  <file path=\"$file_name\">"
+  local fileName="$file_name"
+  local currentPath="$PWD"
+  local path="."
+  local relativePath="${fileName//$currentPath/$path}"
+  echo "  <file path=\"$relativePath\">"
   xcrun xccov view $xccov_options --file "$file_name" "$xccovarchive_file" | \
     sed -n '
     s/^ *\([0-9][0-9]*\): 0.*$/    <lineToCover lineNumber="\1" covered="false"\/>/p;
