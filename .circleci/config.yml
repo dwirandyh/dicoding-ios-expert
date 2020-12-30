@@ -5,9 +5,6 @@ version: 2.1
 
 jobs:
   build:
-    branches:
-      only:
-        - development
     macos:
       xcode: 11.0.0 # Specify the Xcode version to use
 
@@ -23,3 +20,12 @@ jobs:
       - store_artifacts:
           path: test_output
           destination: scan-output
+
+workflows:
+  version: 2
+  main:
+    jobs:
+      - build:
+        filters:
+          branches:
+            only: development
