@@ -46,7 +46,7 @@ jobs:
         run: bundle exec pod install
   
   swift_lint:
-    name: Swift Lint
+    name: SwiftLint
     runs-on: macOS-latest
 
     steps:
@@ -64,7 +64,7 @@ jobs:
         run: brew install swiftlint
 
       - name: Run Swiftlint
-        run: swiflint
+        run: swiftlint
 
   build:
     name: Build Xcode Project
