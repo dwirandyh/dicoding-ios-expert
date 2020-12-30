@@ -44,11 +44,32 @@ jobs:
       - name: Build Pods
         if: steps.cache-pods.outputs.cache-hit != 'true'
         run: bundle exec pod install
+  
+  swift_lint:
+    name: Swift Lint
+    runs-on: macOS-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Cache Swiftlint
+        id: swift-lint
+        uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-swiftlint
+
+      - name: Install Swiftlint
+        if: steps.swift-lint.outputs.cache-hit != 'true'
+        run: brew install swiftlint
+
+      - name: Run Swiftlint
+        run: swiflint
 
   build:
     name: Build Xcode Project
     runs-on: macos-latest
-    needs: install_dependency
+    needs: [install_dependency, swift_lint]
 
     steps:
       - uses: actions/checkout@v2
@@ -68,7 +89,7 @@ jobs:
   test:
     name: Test Xcode Project
     runs-on: macos-latest
-    needs: install_dependency
+    needs: [install_dependency, swift_lint]
 
     steps:
       - uses: actions/checkout@v2
