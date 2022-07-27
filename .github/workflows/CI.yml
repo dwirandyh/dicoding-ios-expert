@@ -52,17 +52,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Cache Swiftlint
-        id: swift-lint
-        uses: actions/cache@v2
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-swiftlint
-
-      - name: Install Swiftlint
-        if: steps.swift-lint.outputs.cache-hit != 'true'
-        run: brew install swiftlint
-
       - name: Run Swiftlint
         run: swiftlint
 
@@ -74,8 +63,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Select Xcode
-        run: sudo xcode-select -switch /Applications/Xcode_12.2.app
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
 
       - name: Load Pods
         uses: actions/cache@v2
